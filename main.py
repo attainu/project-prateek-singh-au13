@@ -131,11 +131,10 @@ def main():
             for currentExtension in extList:
                 if currentFileExtension == currentExtension:
                     print(
-                        f"{currentFile}->{fType}-{filesListIndex}"
-                    )
+                        f'Now moving: {currentFile} to {fType} ----- {filesListIndex} of {fileListTotal}')
                     organizer(currentFile, fType.capitalize())
-                    filesListIndex = 1
-    print(f'Total file organized ---- {fileListTotal}')
+                    filesListIndex += 1
+    print(f'Total file organized ---- {filesListIndex}')
     print("\nFinnaly its done!\nEnjoy!")
 
 
